@@ -19,7 +19,7 @@ def validate_user(username, minlen):
     if username[0].isdigit() or username[0] in ['.','_']:
         return False
     return True
-
+print(" ")
 print(validate_user("blue.kale", 3)) # True
 print(validate_user(".blue.kale", 3)) # Currently True, should be False
 print(validate_user("red_quinoa", 4)) # True
